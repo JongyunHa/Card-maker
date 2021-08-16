@@ -6,9 +6,11 @@ const Editor = ({ cards }) => {
   return (
     <section className={styles.editor}>
       <h1 className={styles.title}>Card Maker</h1>
-      {cards.map((card) => (
-        <CardEditForm card={card} />
-      ))}
+      <ul>
+        {cards.map((card) => (
+          <CardEditForm card={card} />
+        ))}
+      </ul>
     </section>
   );
 };
