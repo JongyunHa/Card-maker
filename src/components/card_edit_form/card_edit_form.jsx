@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './cardEditFrom.module.css';
+import styles from './card_edit_form.module.css';
 import Button from '../button/button';
 import ImageFileInput from '../image_file_input/image_file_input';
 
@@ -13,8 +13,8 @@ const CardEditForm = ({ card }) => {
       <input className={styles.input} type="text" value={name} />
       <input className={styles.input} type="text" value={company} />
       <select className={styles.select} name="theme" value={theme}>
-        <option value="Light">Light</option>
-        <option value="Dark">Dark</option>
+        <option value="light">light</option>
+        <option value="dark">dark</option>
       </select>
       <input className={styles.input} type="text" value={title} />
       <input className={styles.input} type="text" value={email} />
